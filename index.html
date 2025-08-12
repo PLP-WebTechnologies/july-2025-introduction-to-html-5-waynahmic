@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A beginner-friendly example of an accessible HTML5 webpage with semantic structure and SEO best practices">
+    <meta name="keywords" content="HTML5, accessibility, SEO, semantic web, web development">
+    <title>Accessible HTML5 Web Page | Semantic Structure Example</title>
+</head>
+<body>
+    <!-- Skip to content link for screen readers -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header role="banner">
+        <h1>Web Accessibility Guide</h1>
+        <p>Creating inclusive digital experiences for everyone</p>
+    </header>
+
+    <nav role="navigation" aria-label="Main navigation">
+        <h2 class="visually-hidden">Main Menu</h2>
+        <ul>
+            <li><a href="#what-is-accessibility">What is Accessibility?</a></li>
+            <li><a href="#semantic-html">Semantic HTML</a></li>
+            <li><a href="#seo-benefits">SEO Benefits</a></li>
+            <li><a href="#resources">Resources</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content" role="main">
+        <article>
+            <section id="what-is-accessibility" aria-labelledby="accessibility-heading">
+                <h2 id="accessibility-heading">What is Web Accessibility?</h2>
+                <p>Web accessibility means that websites, tools, and technologies are designed and developed so that people with disabilities can use them.</p>
+                <p>Accessibility supports social inclusion for people with disabilities as well as others, such as older people, people in rural areas, and people in developing countries.</p>
+            </section>
+
+            <section id="semantic-html" aria-labelledby="semantic-heading">
+                <h2 id="semantic-heading">The Importance of Semantic HTML</h2>
+                <p>Semantic HTML introduces meaning to the web page rather than just presentation. For example, a <code>&lt;p&gt;</code> tag indicates that the enclosed text is a paragraph.</p>
+                
+                <h3>Key Semantic Elements</h3>
+                <ul>
+                    <li><strong>&lt;header&gt;</strong>: Introductory content</li>
+                    <li><strong>&lt;nav&gt;</strong>: Navigation links</li>
+                    <li><strong>&lt;main&gt;</strong>: Dominant content</li>
+                    <li><strong>&lt;article&gt;</strong>: Self-contained composition</li>
+                    <li><strong>&lt;section&gt;</strong>: Thematic grouping</li>
+                    <li><strong>&lt;footer&gt;</strong>: Closing content</li>
+                </ul>
+            </section>
+
+            <section id="seo-benefits" aria-labelledby="seo-heading">
+                <h2 id="seo-heading">SEO Benefits of Semantic HTML</h2>
+                <p>Search engines give better rankings to websites with clear structure and semantic markup because:</p>
+                <ol>
+                    <li>Proper heading hierarchy helps search engines understand content importance</li>
+                    <li>Semantic elements provide clear content landmarks</li>
+                    <li>Accessible sites often have better content organization</li>
+                    <li>Text alternatives for images improve content understanding</li>
+                </ol>
+            </section>
+        </article>
+
+        <aside aria-labelledby="related-heading">
+            <h2 id="related-heading">Related Resources</h2>
+            <ul>
+                <li><a href="https://www.w3.org/WAI/" aria-label="Web Accessibility Initiative">W3C Web Accessibility Initiative</a></li>
+                <li><a href="https://webaim.org/" aria-label="Web Accessibility in Mind">WebAIM</a></li>
+                <li><a href="https://developers.google.com/search/docs" aria-label="Google Search Documentation">Google Search Central</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer role="contentinfo">
+        <h2>About This Page</h2>
+        <p>This page demonstrates HTML5 semantic structure with accessibility and SEO best practices.</p>
+        <p>Last updated: <time datetime="2023-11-15">November 15, 2023</time></p>
+        <p><small>&copy; 2023 Accessible Web Examples. All rights reserved.</small></p>
+    </footer>
+</body>
+</html>
